@@ -7,5 +7,5 @@ from .serializers import ClientSerializer
 # Create your views here.
 
 class ClientViewSet(viewsets.ModelViewSet):
-    queryset = Client.objects.all()
     serializer_class = ClientSerializer
+    queryset = Client.objects.all()
